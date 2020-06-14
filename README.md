@@ -18,7 +18,7 @@ All the festival organisers.
 4. [Foursquare API](https://developer.foursquare.com/)
 
 ## Data sources
-Foursquare offers a developer API and we'll be using its venue search functionality. I will use the [Foursquare API](https://developer.foursquare.com/) to solve this problem. Particularly, I will use the `search` endpoint, [listed here](https://developer.foursquare.com/docs/api-reference/venues/search/), querying by the query parameter `categoryId` and its value `4d4b7105d754a06376d81259`, corresponding to Nightlife Spots (see more [here](https://developer.foursquare.com/docs/build-with-foursquare/categories/).
+Foursquare offers a developer API and we'll be using its venue search functionality. I will use the [Foursquare API](https://developer.foursquare.com/) to solve this problem. Particularly, I will use the `search` endpoint, [listed here](https://developer.foursquare.com/docs/api-reference/venues/search/), querying by the query parameter `categoryId` and its value `4d4b7105d754a06376d81259`, corresponding to Nightlife Spots (see more [here](https://developer.foursquare.com/docs/build-with-foursquare/categories/)).
 
 I did a quick test for nightlife spots near Toronto University (2km) and find it to be fairly accurate.
 
