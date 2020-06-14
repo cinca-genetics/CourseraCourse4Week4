@@ -1,17 +1,26 @@
 # CourseraCourse4 (Week 4 and Week 5)
 
 ## Idea
-My idea/problem of choice is to focus on a particular neighbourhood in Toronto, Garden District, Ryerson.
+The Garden District Residents Association is worried about improving their resources. They want to organize a local festival with University of Toronto in Down Town Toronto and they are looking to avoid competition with local nightlife. They wish to have information about nightlife in the area of University of Toronto to decide the festival venue location. 
+
+### Objective
+To find the number and location of nightlife spots 2km from University of Toronto.
+
+### Audience
+All the festival organisers.
+
 
 ## Technology Stack 
 
-1. Python
+1. Python 3.6
 2. [Jupyter Notebook](https://jupyter.org/).
 3. [Folium](https://github.com/python-visualization/folium)
 4. [Foursquare API](https://developer.foursquare.com/)
 
 ## Data sources
-I will use the [Foursquare API](https://developer.foursquare.com/) to solve this problem. Particularly, I will use the `search` endpoint, [listed here](https://developer.foursquare.com/docs/api-reference/venues/search/), querying by the query parameter `categoryId` and its value `4d4b7105d754a06376d81259`, corresponding to Nightlife Spots (see more [here](https://developer.foursquare.com/docs/build-with-foursquare/categories/).
+Foursquare offers a developer API and we'll be using its venue search functionality. I will use the [Foursquare API](https://developer.foursquare.com/) to solve this problem. Particularly, I will use the `search` endpoint, [listed here](https://developer.foursquare.com/docs/api-reference/venues/search/), querying by the query parameter `categoryId` and its value `4d4b7105d754a06376d81259`, corresponding to Nightlife Spots (see more [here](https://developer.foursquare.com/docs/build-with-foursquare/categories/).
+
+I did a quick test for nightlife spots near Toronto University (2km) and find it to be fairly accurate.
 
 I select the University of Toronto neighbourhood:
 
@@ -60,11 +69,18 @@ venues = venues.dropna(subset=['address'])
 venues.iloc[3,:]
 ```
 
+## Conclusions and results
+Now we have answered the question we set out for. If the client  wants to avoid nightlife spots, the festival can be set on the north part of the neighbourhood ......... We can easily use the map above to make the choice.
 
-## Audience
-My audience is any particular stakeholder that will like to use the data on Garden District, Ryerson to identify different kind of venues to solve a particular problem (social, mobility, marketing, other) within this neighbourhood. My audience would care about this problem because it's interesting and useful to have more accurata data on this neighbourhood.
+The streets xxxxxx are in the top three in terms of number of nightlife spots. 
 
-## Conclusions
+If you're looking to be away from the neighbourhood nightlife spots the xxxxx is the place . 
+
+### Visualizating the results
+[A clickable map at the bottom of my Jupter Notebook](https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/394d3b27-605e-485e-a6cb-1cdd8f36cd04/view?access_token=629fc1d44403006657f3695949206b9c65433ef488c06f12e929f5eda717c2fb) is a good way to see our results: number and location of nightlife spots.
+
+## Observations
+The provided results do not take into account nightlife spots outside of 2 km limit from University of Toronto.
 
 ## Future directions
 
