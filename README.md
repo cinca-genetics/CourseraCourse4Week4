@@ -70,11 +70,8 @@ venues.iloc[3,:]
 ```
 
 ## Conclusions and results
-Now we have answered the question we set out for. If the client  wants to avoid nightlife spots, the festival can be set on the north part of the neighbourhood ......... We can easily use the map above to make the choice.
-
-The streets xxxxxx are in the top three in terms of number of nightlife spots. 
-
-If you're looking to be away from the neighbourhood nightlife spots the xxxxx is the place . 
+Now we have answered the question we set out for. If the client wants to avoid nightlife spots, the festival can be set on the north part of the neighbourhood, particularly in the north of Bloor West Street. We can easily [use the map](https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/394d3b27-605e-485e-a6cb-1cdd8f36cd04/view?access_token=629fc1d44403006657f3695949206b9c65433ef488c06f12e929f5eda717c2fb) to make this decision.
+ 
 
 ### Visualizating the results
 [A clickable map at the bottom of my Jupter Notebook](https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/394d3b27-605e-485e-a6cb-1cdd8f36cd04/view?access_token=629fc1d44403006657f3695949206b9c65433ef488c06f12e929f5eda717c2fb) is a good way to see our results: number and location of nightlife spots.
