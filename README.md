@@ -1,13 +1,16 @@
-# CourseraCourse4Week4
+# CourseraCourse4 (Week 4 and Week 5)
 
-# Final Report: Data section
-
-## Introduction/Business Problem
-
-### Idea
+## Idea
 My idea/problem of choice is to focus on a particular neighbourhood in Toronto, Garden District, Ryerson.
 
-### Data sources
+## Technology Stack 
+
+1. Python
+2. [Jupyter Notebook](https://jupyter.org/).
+3. [Folium](https://github.com/python-visualization/folium)
+4. [Foursquare API](https://developer.foursquare.com/)
+
+## Data sources
 I will use the [Foursquare API](https://developer.foursquare.com/) to solve this problem. Particularly, I will use the `search` endpoint, [listed here](https://developer.foursquare.com/docs/api-reference/venues/search/), querying by the query parameter `categoryId` and its value `4d4b7105d754a06376d81259`, corresponding to Nightlife Spots (see more [here](https://developer.foursquare.com/docs/build-with-foursquare/categories/).
 
 I select the University of Toronto neighbourhood:
@@ -38,7 +41,7 @@ Notice:
  1. `categoryId` is `4d4b7105d754a06376d81259`, passed as a query parameter.
  2. I'm using a `radius` of `2000`.
 
-#### Data cleaning
+### Data cleaning
 
 I remove `NaN` values from the `location.address` column coming from the [Foursquare API](https://developer.foursquare.com/).
 
@@ -58,5 +61,15 @@ venues.iloc[3,:]
 ```
 
 
-### Audience
+## Audience
 My audience is any particular stakeholder that will like to use the data on Garden District, Ryerson to identify different kind of venues to solve a particular problem (social, mobility, marketing, other) within this neighbourhood. My audience would care about this problem because it's interesting and useful to have more accurata data on this neighbourhood.
+
+## Conclusions
+
+## Future directions
+
+In future iterations, the organisers of this event (or other events) can use the existing data to match it with other activities around University of Toronto.
+
+They can also use this entire project to query other kinds of venues, around other kind of areas (anywhere in the world) by replacing the area in the Jupyter Notebook and the type of venue in the FourSquare API.
+
+
